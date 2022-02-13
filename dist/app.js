@@ -7,8 +7,13 @@ import {
 } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js'
 
 
+document.getElementById('big').style.display = 'none';
+document.getElementById('load').style.display = 'block';
 
-
+ window.addEventListener('load', () => {
+  document.getElementById('big').style.display = 'block';
+  document.getElementById('load').style.display = 'none';
+   
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(
     8,
@@ -70,3 +75,4 @@ import {
 
     animate();
   }
+ })
