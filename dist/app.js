@@ -7,8 +7,6 @@ import {
 } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/controls/OrbitControls.js'
 
 
-document.getElementById('big').style.display = 'none';
-document.getElementById('load').style.display = 'block';
 
 
    
