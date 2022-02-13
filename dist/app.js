@@ -37,9 +37,7 @@ import {
     scene.add(gltf.scene);
     obj.rotation.y -= 3.5;
     ok();
-    
-  document.getElementById('big').style.display = 'block';
-  document.getElementById('load').style.display = 'none';
+
   });
 
 
