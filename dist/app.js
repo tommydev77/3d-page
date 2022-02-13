@@ -10,9 +10,7 @@ import {
 document.getElementById('big').style.display = 'none';
 document.getElementById('load').style.display = 'block';
 
- window.addEventListener('load', () => {
-  document.getElementById('big').style.display = 'block';
-  document.getElementById('load').style.display = 'none';
+
    
   var scene = new THREE.Scene();
   var camera = new THREE.PerspectiveCamera(
@@ -41,6 +39,9 @@ document.getElementById('load').style.display = 'block';
     scene.add(gltf.scene);
     obj.rotation.y -= 3.5;
     ok();
+    
+  document.getElementById('big').style.display = 'block';
+  document.getElementById('load').style.display = 'none';
   });
 
 
@@ -75,4 +76,4 @@ document.getElementById('load').style.display = 'block';
 
     animate();
   }
- })
+
